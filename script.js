@@ -52,13 +52,8 @@ function dateBuilder(d) {
 }
 
 
-if ('seviceWorker' in navigator) {
-    window.addEventListener('load', () =>  {
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js')
-            .then((reg) => {
-                console.log('Registered! ' + reg);
-            }).catch((error) =>  {
-                console.log('Registration failed! ' + err);
-            });
-    });
+    })
 }
