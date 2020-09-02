@@ -28,7 +28,7 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
     console.log('Fetch event!')
-    event.respondWith(
+   /* event.respondWith(
         caches.match(event.request)
         .then(response => {
             return caches.open(cacheName)
@@ -38,5 +38,5 @@ self.addEventListener('fetch', event => {
                 return response;
             });
         })
-    );
+    ); */
 });
