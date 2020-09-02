@@ -25,6 +25,20 @@ header{
     padding: 50px 15px 15px;
 }
 
+.search-btn{
+    padding: 10px 15px;
+    border-radius: 16px 0px;
+    margin-left: 1em;
+    border: none;
+    outline: none;
+    transition: ease-in .4s;
+}
+
+.search-btn:hover{
+    color: #fff;
+    background-color: #df8e00;
+}
+
 header input{
     width: 100%;
     max-width: 280px;
